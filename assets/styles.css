@@ -6,6 +6,10 @@
   color: hsl(228, 45%, 44%);
 }
 
+.client-images > img {
+  height: 1.75rem;
+}
+
 .hero-image {
   height: 30rem;
 }
