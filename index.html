@@ -15,30 +15,53 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
   <link href="assets/styles.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
+
     <div class="d-flex py-2">
-      <div class="logo-image align-self-end mx-5">
+      <div class="logo-image mx-5 align-self-end">
         <img src="images/logo.svg" alt="logo image" />
       </div>
-      <div class="nav flex-sm-grow-1">
-        <div class="dropdown">
-          <button class="btn btn-link text-decoration-none">Features</button>
-        </div>
-        <div class="dropdown">
-          <button class="btn btn-link text-decoration-none">Company</button>
-        </div>
-        <button class="btn btn-link text-decoration-none">Careers</button>
-        <button class="btn btn-link text-decoration-none">About</button>
+
+      <div class="d-md-none d-flex justify-content-end flex-grow-1 me-5">
+        <button type="button" class="btn btn-outline-dark d-md-none" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+          <i class="bi bi-list h-4" style="font-size: 1.75rem"></i>
+        </button>
       </div>
 
-      <div class="nav mx-5">
-        <button class="btn btn-link text-decoration-none" type="button">Login</button>
-        <button class="btn btn-outline-dark text-decoration-none" type="button">Register</button>
+      <div class="offcanvas-md offcanvas-end d-md-flex flex-md-grow-1" id="offcanvasResponsive">
+        <div class="d-md-flex">
+          <div class="d-md-none d-flex justify-content-end">
+            <button type="button" class="btn mx-5 my-2" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+              <i class="bi bi-x-lg" style="font-size: 1.75rem"></i>
+            </button>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-link text-decoration-none">Features</button>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-link text-decoration-none">Company</button>
+          </div>
+          <div>
+            <button class="btn btn-link text-decoration-none">Careers</button>
+          </div>
+          <div>
+            <button class="btn btn-link text-decoration-none">About</button>
+          </div>
+        </div>
+
+        <div class="d-flex flex-md-grow-1 justify-content-md-end mx-md-5">
+          <button class="btn btn-link text-decoration-none" type="button">Login</button>
+          <button class="btn btn-outline-dark text-decoration-none" type="button">Register</button>
+        </div>
       </div>
     </div>
   </header>
@@ -46,7 +69,10 @@
   <main>
     <div class="container mx-auto my-3">
       <div class="row mx-5">
-        <div class="col-6">
+        <div class="col-6 order-md-last">
+          <img class="img-fluid" src="images/image-hero-desktop.png" alt="hero image" />
+        </div>
+        <div class="col-6 order-md-first">
           <div class="row h-100">
             <div class="my-5 align-self-center col-12">
               <h1>Make remote work</h1>
@@ -63,9 +89,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
-          <img class="img-fluid" src="images/image-hero-desktop.png" alt="hero image" />
-        </div>
+        
       </div>
     </div>
   </main>
