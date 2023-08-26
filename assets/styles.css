@@ -17,3 +17,25 @@
 .hero-image {
   height: 30rem;
 }
+
+.btn-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg)!important;
+  transition: transform .50s ease;
+  display: inline-block;
+}
+
+.btn-toggle::after {
+  line-height: 0;
+  position: relative;
+  top: .175rem;
+  content: url("../images/chevron-down.svg");
+  transition: transform .50s ease;
+  transform-origin: 0.5em 50%;
+  color: red;
+}
+
+@media screen and (max-width: 765px)  {
+  .max-sidebar-size-sm-md {
+    width: 15rem!important;
+  }
+}

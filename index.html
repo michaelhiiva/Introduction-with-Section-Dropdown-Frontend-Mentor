@@ -36,19 +36,93 @@
         </button>
       </div>
 
-      <div class="offcanvas-md offcanvas-end d-md-flex flex-md-grow-1" id="offcanvasResponsive">
-        <div class="d-md-flex">
+      <div class=" max-sidebar-size-sm-md offcanvas-md offcanvas-end d-md-flex flex-md-grow-1" id="offcanvasResponsive">
+        <div class="d-md-flex justify-content-md-center">
           <div class="d-md-none d-flex justify-content-end">
-            <button type="button" class="btn mx-5 my-2" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+            <button type="button" class="btn mx-2 my-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+              aria-controls="offcanvasResponsive">
               <i class="bi bi-x-lg" style="font-size: 1.75rem"></i>
             </button>
           </div>
-          <div class="dropdown">
-            <button class="btn btn-link text-decoration-none">Features</button>
+          <div class="dropdown" id="FeaturesDropdown">
+            <button class="btn btn-link d-block d-md-none text-decoration-none btn-toggle" type="button"
+              id="FeaturesCollapseButton" data-bs-toggle="collapse" data-bs-target="#FeaturesCollapse"
+              aria-expanded="false" aria-controls="FeaturesCollapse">
+              Features
+            </button>
+            <button class="btn btn-link d-none d-md-block text-decoration-none btn-toggle" type="button"
+              id="FeaturesDropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Features
+            </button>
+            <div class="collapse d-md-none" id="FeaturesCollapse">
+              <ul class="list-unstyled" aria-labelledby="FeaturesDropdownButton">
+                <li>
+                  <button class="ps-4 btn btn-link text-decoration-none">ToDo List</button>
+                </li>
+                <li>
+                  <button class="ps-4 btn btn-link text-decoration-none">Calendar</button>
+
+                </li>
+                <li>
+                  <button class="ps-4 btn btn-link text-decoration-none">Reminders</button>
+                </li>
+                <li>
+                  <button class="ps-4 btn btn-link text-decoration-none">Planning</button>
+                </li>
+              </ul>
+            </div>
+            <ul class="dropdown-menu list-unstyled" aria-labelledby="FeaturesDropdownButton">
+              <li>
+                <button class="btn btn-link text-decoration-none">ToDo List</button>
+              </li>
+              <li>
+                <button class="btn btn-link text-decoration-none">Calendar</button>
+
+              </li>
+              <li>
+                <button class="btn btn-link text-decoration-none">Reminders</button>
+              </li>
+              <li>
+                <button class="btn btn-link text-decoration-none">Planning</button>
+              </li>
+            </ul>
           </div>
-          <div class="dropdown">
-            <button class="btn btn-link text-decoration-none">Company</button>
+          <div class="dropdown" aria-labelledby="CompanyDropdown">
+            <button class="btn btn-link d-none d-md-block text-decoration-none btn-toggle" type="button"
+              id="CompanyDropdownButton" data-bs-toggle="dropdown" data-bs-target="#CompanyDropdown"
+              aria-expanded="false" aria-controls="CompanyDropdown">
+              Company
+            </button>
+            <button class="btn btn-link d-block d-md-none text-decoration-none btn-toggle" type="button"
+              id="CompanyCollapseButton" data-bs-toggle="collapse" data-bs-target="#CompanyCollapse"
+              aria-expanded="false" aria-controls="CompanyCollapse">
+              Company
+            </button>
+
+            <div class="collapse d-md-none" id="CompanyCollapse">
+              <ul class="list-unstyled">
+                <li>
+                  <button class="ps-4 py-0 btn btn-link text-decoration-none">History</button>
+                </li>
+                <li>
+                  <button class="ps-4 py-0  btn btn-link text-decoration-none">Our Team</button>
+                </li>
+                <li>
+                  <button class="ps-4 py-0  btn btn-link text-decoration-none">Blog</button>
+                </li>
+              </ul>
+            </div>
+            <ul class="dropdown-menu list-unstyled" id="CompanyDropdown">
+              <li>
+                <button class="py-0 btn btn-link text-decoration-none">History</button>
+              </li>
+              <li>
+                <button class="py-0 btn btn-link text-decoration-none">Our Team</button>
+              </li>
+              <li>
+                <button class="py-0 btn btn-link text-decoration-none">Blog</button>
+              </li>
+            </ul>
           </div>
           <div>
             <button class="btn btn-link text-decoration-none">Careers</button>
@@ -58,16 +132,17 @@
           </div>
         </div>
 
-        <div class="d-flex flex-md-grow-1 justify-content-md-end mx-md-5">
+        <div class="d-flex flex-column flex-md-row flex-md-grow-1 justify-content-md-end mx-5">
           <button class="btn btn-link text-decoration-none" type="button">Login</button>
-          <button class="btn btn-outline-dark text-decoration-none" type="button">Register</button>
+          <button class="btn btn-outline-dark text-decoration-none" style="border-radius: .5rem;"
+            type="button">Register</button>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <div class="container mx-auto my-3">
+    <div class="container mx-auto my-4">
       <div class="row mx-5">
         <div class="col-12 col-md-6 order-md-last">
           <img class="img-fluid d-none d-md-block" src="images/image-hero-desktop.png" alt="hero image" />
@@ -90,7 +165,7 @@
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </main>
