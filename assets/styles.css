@@ -39,3 +39,29 @@
     width: 15rem!important;
   }
 }
+
+.todo-list,
+.calendar,
+.reminders,
+.planning {
+  background-repeat: no-repeat;
+  background-position-y: center;
+  margin-left: 1rem;
+}
+
+.todo-list {
+  background-image: url('../images/icon-todo.svg');
+}
+
+.calendar {
+  background-image: url('../images/icon-calendar.svg');
+}
+
+.reminders {
+  background-image: url('../images/icon-reminders.svg');
+}
+
+.planning ­{
+  background-image: url('../images/icon-planning.svg');
+}
+
