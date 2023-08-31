@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <link href="assets/styles.css" rel="stylesheet">
+  <script type="module" src="assets/script.js"></script>
 </head>
 
 <body>
@@ -44,83 +45,41 @@
               <i class="bi bi-x-lg" style="font-size: 1.75rem"></i>
             </button>
           </div>
-          <div class="dropdown" id="FeaturesDropdown">
-            <button class="btn btn-link d-block d-md-none text-decoration-none btn-toggle" type="button"
-              id="FeaturesCollapseButton" data-bs-toggle="collapse" data-bs-target="#FeaturesCollapse"
-              aria-expanded="false" aria-controls="FeaturesCollapse">
+          <div class="dropdown">
+            <button class="collapse-list-button btn btn-link text-decoration-none btn-toggle" type="button"
+              aria-expanded="false" data-bs-target="#FeaturesMenu">
               Features
             </button>
-            <button class="btn btn-link d-none d-md-block text-decoration-none btn-toggle" type="button"
-              id="FeaturesDropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
-              Features
-            </button>
-            <div class="collapse d-md-none" id="FeaturesCollapse">
-              <ul class="list-unstyled" aria-labelledby="FeaturesDropdownButton">
-                <li>
-                  <button class="ps-4 btn btn-link text-decoration-none">ToDo List</button>
-                </li>
-                <li>
-                  <button class="ps-4 btn btn-link text-decoration-none">Calendar</button>
-
-                </li>
-                <li>
-                  <button class="ps-4 btn btn-link text-decoration-none">Reminders</button>
-                </li>
-                <li>
-                  <button class="ps-4 btn btn-link text-decoration-none">Planning</button>
-                </li>
-              </ul>
-            </div>
-            <ul class="dropdown-menu list-unstyled" aria-labelledby="FeaturesDropdownButton">
+            <ul class="collapse-list-menu list-unstyled" id="FeaturesMenu">
               <li>
-                <button class="btn btn-link text-decoration-none">ToDo List</button>
+                <button class="ps-4 py-0 btn btn-link text-decoration-none">ToDo List</button>
               </li>
               <li>
-                <button class="btn btn-link text-decoration-none">Calendar</button>
+                <button class="ps-4 py-0 btn btn-link text-decoration-none">Calendar</button>
 
               </li>
               <li>
-                <button class="btn btn-link text-decoration-none">Reminders</button>
+                <button class="ps-4 py-0 btn btn-link text-decoration-none">Reminders</button>
               </li>
               <li>
-                <button class="btn btn-link text-decoration-none">Planning</button>
+                <button class="ps-4 py-0 btn btn-link text-decoration-none">Planning</button>
               </li>
             </ul>
           </div>
-          <div class="dropdown" aria-labelledby="CompanyDropdown">
-            <button class="btn btn-link d-none d-md-block text-decoration-none btn-toggle" type="button"
-              id="CompanyDropdownButton" data-bs-toggle="dropdown" data-bs-target="#CompanyDropdown"
-              aria-expanded="false" aria-controls="CompanyDropdown">
+          <div class="dropdown">
+            <button class="collapse-list-button btn btn-link text-decoration-none btn-toggle" type="button"
+              aria-expanded="false" data-bs-target="#CompanyMenu">
               Company
             </button>
-            <button class="btn btn-link d-block d-md-none text-decoration-none btn-toggle" type="button"
-              id="CompanyCollapseButton" data-bs-toggle="collapse" data-bs-target="#CompanyCollapse"
-              aria-expanded="false" aria-controls="CompanyCollapse">
-              Company
-            </button>
-
-            <div class="collapse d-md-none" id="CompanyCollapse">
-              <ul class="list-unstyled">
-                <li>
-                  <button class="ps-4 py-0 btn btn-link text-decoration-none">History</button>
-                </li>
-                <li>
-                  <button class="ps-4 py-0  btn btn-link text-decoration-none">Our Team</button>
-                </li>
-                <li>
-                  <button class="ps-4 py-0  btn btn-link text-decoration-none">Blog</button>
-                </li>
-              </ul>
-            </div>
-            <ul class="dropdown-menu list-unstyled" id="CompanyDropdown">
+            <ul class="collapse-list-menu list-unstyled" id="CompanyMenu">
               <li>
-                <button class="py-0 btn btn-link text-decoration-none">History</button>
+                <button class="ps-4 py-0 btn btn-link text-decoration-none">History</button>
               </li>
               <li>
-                <button class="py-0 btn btn-link text-decoration-none">Our Team</button>
+                <button class="ps-4 py-0  btn btn-link text-decoration-none">Our Team</button>
               </li>
               <li>
-                <button class="py-0 btn btn-link text-decoration-none">Blog</button>
+                <button class="ps-4 py-0  btn btn-link text-decoration-none">Blog</button>
               </li>
             </ul>
           </div>
