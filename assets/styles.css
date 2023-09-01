@@ -43,10 +43,14 @@
 .todo-list,
 .calendar,
 .reminders,
-.planning {
+.reminders2 {
   background-repeat: no-repeat;
   background-position-y: center;
   margin-left: 1rem;
+}
+
+.reminders2 {
+  background-image: url('../images/icon-reminders.svg');
 }
 
 .todo-list {
@@ -58,10 +62,8 @@
 }
 
 .reminders {
-  background-image: url('../images/icon-reminders.svg');
-}
-
-.planning ­{
   background-image: url('../images/icon-planning.svg');
 }
+
+
 
