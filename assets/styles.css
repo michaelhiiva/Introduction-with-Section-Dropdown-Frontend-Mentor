@@ -42,7 +42,7 @@
 
 .todo-list,
 .calendar,
-.reminders,
+.planning,
 .reminders2 {
   background-repeat: no-repeat;
   background-position-y: center;
@@ -61,7 +61,7 @@
   background-image: url('../images/icon-calendar.svg');
 }
 
-.reminders {
+.planning {
   background-image: url('../images/icon-planning.svg');
 }
 
